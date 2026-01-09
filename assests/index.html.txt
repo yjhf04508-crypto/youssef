@@ -1,0 +1,190 @@
+By-Portfolio
+│
+├── index.html        (Home)
+├── work.html         (Portfolio)
+├── about.html        (About)
+├── contact.html      (Contact)
+│
+├── style.css
+├── script.js
+│
+└── assets
+    ├── images
+    └── videos<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>By | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>By</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h2>Graphic Designer & Motion</h2>
+  <p>I create modern visuals and motion graphics.</p>
+  <a href="work.html" class="btn">View My Work</a>
+</section>
+
+<a href="https://wa.me/201234567890" class="whatsapp">WhatsApp</a>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>By | About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>By</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a graphic designer with experience in motion graphics.
+    I focus on clean, modern, and creative visuals.
+  </p>
+</section>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>By | Work</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>By</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="grid">
+  <img src="assets/images/work1.jpg">
+  <img src="assets/images/work2.jpg">
+
+  <video src="assets/videos/motion1.mp4" controls></video>
+</section>
+
+</body>
+</html>body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1320;
+  color: white;
+}
+
+nav {
+  background: #0f1b2d;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #4da3ff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #4da3ff;
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.grid img, video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about, .contact-form {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>By | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>By</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<form class="contact-form">
+  <input type="text" placeholder="Your Name">
+  <input type="email" placeholder="Your Email">
+  <textarea placeholder="Your Message"></textarea>
+  <button type="submit">Send</button>
+</form>
+
+</body>
+</html>
